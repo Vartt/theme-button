@@ -13,12 +13,17 @@ body {
 
 .btn {
     font-family: Arial, Helvetica, sans-serif;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     padding: 5px 10px;
-    background: cyan;
+    min-width: 100px;
+    background: white;
     border-radius: 5px;
     font-size: 2.5rem;
     cursor: pointer;
+}
+
+.btn::before {
+    content: "\2600";
 }
 
 .app {
@@ -28,4 +33,9 @@ body {
 .dark {
     background-color: black;
     color: aliceblue;
+}
+
+.dark-btn::before {
+    content: "\263E";
+   
 }
